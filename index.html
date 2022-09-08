@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="index.css" />
+    <!--CSS-->
+    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Overpass)" />
+     <!--Google Fonts-->
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    
+    <div class="box-container">
+      <h1 id="Heading">How did we do?</h1>
+
+      <div id="p1" class="circle"></div>
+      <img class="star" src="icon-star.svg" alt="star" />
+
+      <p class="sentence-1">
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+
+      <form id="myForm">
+        <div class ="radio-toolbar">
+        <input
+          id="myButton-1"
+          type="radio"
+          value="1"
+          name="number"
+          required
+        />
+        <label for="myButton-1">1</label>
+
+        <input
+          id="myButton-2"
+          type="radio"
+          value="2"
+          name="number"
+        />
+        <label for="myButton-2">2</label>
+
+        <input
+          id="myButton-3"
+          type="radio"
+          value="3"
+          name="number"
+        />
+        <label for="myButton-3">3</label>
+
+        <input
+          id="myButton-4"
+          type="radio"
+          value="4"
+          name="number"
+        />
+        <label for="myButton-4">4</label>
+
+        <input
+          id="myButton-5"
+          type="radio"
+          value="5"
+          name="number"
+        />
+        <label for="myButton-5">5</label>
+
+        <input class="submit" type="submit" value="SUBMIT" />
+
+      </form>
+    </div>
+      
+
+      <div id="results"></div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mitchell Carney</a>.
+    </div>
+    <script src="index.js"></script>
+    <!--JavaScript-->
+  </body>
+</html>
