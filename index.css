@@ -111,13 +111,14 @@
   .radio-toolbar label {
     display: inline-block;
     background-color: hsl(213, 19%, 18%);
-    padding: 15px 21px;
+    padding: 15px 17px;
     border-radius: 50%;
     font-family: sans-serif, Arial, Helvetica, sans-serif;
     font-size: 16px;
     position: relative;
     bottom: 65px;
     right: 27px;
+    left: -25px;
 
   }
 
@@ -141,5 +142,6 @@
  .Button-1, .Button-2, .Button-3, .Button-4, .Button-5 {
 
     margin: 0px;
+    display: inline-block;
   
   }
