@@ -118,7 +118,6 @@
     position: relative;
     bottom: 65px;
     right: 27px;
-    margin: -5px;
 
   }
 
@@ -138,4 +137,9 @@
     position: relative;
     left: 20px;
   } 
+      
+ .Button-1, .Button-2, .Button-3, .Button-4, .Button-5 {
 
+    margin: 0px;
+  
+  }
