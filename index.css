@@ -121,6 +121,14 @@
 
   }
 
+   @media all and (max-width: 1920px) {
+  .radio-toolbar label {
+    padding: 15px 17px;
+    position: relative;
+    margin: 3px;
+  }
+}
+
   .radio-toolbar input[type="radio"]:checked + label {
     background-color: hsl(217, 12%, 63%);
     color: white;
@@ -140,7 +148,7 @@
       
  .Button-1, .Button-2, .Button-3, .Button-4, .Button-5 {
 
-    margin: 3px;
+    margin: 0px;
     display: inline-block;
   
   }
