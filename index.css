@@ -121,11 +121,11 @@
 
   }
 
-   @media all and (max-width: 1920px) {
+   @media all and (max-width: 1020px) {
   .radio-toolbar label {
     padding: 15px 17px;
     position: relative;
-    margin: 3px;
+    margin: 0px;
   }
 }
 
@@ -148,7 +148,7 @@
       
  .Button-1, .Button-2, .Button-3, .Button-4, .Button-5 {
 
-    margin: 0px;
+    margin: 3px;
     display: inline-block;
   
   }
