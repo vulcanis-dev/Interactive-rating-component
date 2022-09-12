@@ -125,6 +125,7 @@
   .radio-toolbar label {
     padding: 15px 17px;
     position: relative;
+    margin: 3;
   }
 }
 
