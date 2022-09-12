@@ -121,7 +121,7 @@
 
   }
 
-  @media all and (max-width: 970px) {
+  @media all and (max-width: 1920px) {
   .radio-toolbar label {
     padding: 15px 17px;
     position: relative;
