@@ -121,11 +121,10 @@
 
   }
 
-   @media all and (max-width: 400px) {
+ @media only screen and (min-device-width: 350px) and (max-device-width: 1920px ) {
   .radio-toolbar label {
     padding: 15px 17px;
     position: relative;
-    margin: 3;
   }
 }
 
@@ -152,3 +151,21 @@
     display: inline-block;
   
   }
+
+@media only screen and (min-device-width: 350px) and (max-device-width: 1280px ) {
+    .Button-1, .Button-2, .Button-3, .Button-4, .Button-5 {
+
+      margin: 2px;
+
+  }
+
+}
+
+@media only screen and (min-device-width: 1290px) and (max-device-width: 1920px ) {
+  .Button-1, .Button-2, .Button-3, .Button-4, .Button-5 {
+
+    margin: 3px;
+
+}
+
+}
