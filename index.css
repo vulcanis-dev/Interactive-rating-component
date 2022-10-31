@@ -1,21 +1,23 @@
-
+/*its good practice for your tab spacing to start on the furthest left, and only tab out for nested elements*/
       .attribution {
         font-size: 11px;
         color: aliceblue;
       }
-
+/*this isnt important but its also common place for your body element, or your higest order element to be at the top of the file*/
+/* also something weird is happening with your {} here, the closing one doesnt match the indentation of the tag */
       body{
         background-color:black;
-    }
+    } /*here - also good practive to leave a line break between different elements */
       .attribution a {
         color: aliceblue;
       } 
 
-      h1 {
+      h1 { /*and here to have no blank spaces in your css unless youre declaring a nested element */
 
         color: white;
         font-size: 25px;
-        font-family: "Overpass", sans-serif;
+        font-family: "Overpass", sans-serif; /* you seem to use this same font family in many elements, you should use this in your body tag and only 
+        override it when you need a different font. */
         position: relative;
         right: 70px;
 
@@ -33,7 +35,7 @@
       
      .submit {
         background-color: hsl(25, 97%, 53%);
-        color: hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 100%); /*probably more of a preference thing but you can just declare white as #fff or white */
         border-radius: 25px;
         width: 320px;
         height: 40px;
@@ -42,7 +44,7 @@
         font-size: 15px;
         font-family: "Overpass", sans-serif;
         cursor: pointer;
-        
+        /* again lots of blank space here which could be removed */
 
     } 
     .submit:active {
@@ -51,14 +53,14 @@
       
     }
     .box-container {
-        background-color: hsl(216, 12%, 8%);
+        background-color: hsl(216, 12%, 8%); /* and this could be black or #000, unless you were going for gray */
         color: hsl(216, 12%, 54%);
         border-radius: 30px;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        display: grid;
+        transform: translate(-50%, -50%); /* does this not just reverse your top and left properties ? */
+        display: grid; /* from this property and the following you should look into replacing with flex, you will get a more consistent and responsive design */
         place-items: center;
         grid-template-rows: 180px;
         grid-template-columns: 360px;
@@ -93,11 +95,11 @@
       font-family: "Overpass", sans-serif;
       background-color: hsl(213, 19%, 18%);
       border-radius: 10px;
-      padding-bottom: 5px;
+      padding-bottom: 5px; /* this section can be shortened to padding: 5px 10px; the first property being top and bottom, the second being left and right;*/
       padding-top: 5px;
       padding-left: 10px;
       padding-right: 10px;
-      opacity: 0;
+      opacity: 0; /* is this to hide it ? if so this would normally be done using display : none; */
       
     }
 
@@ -145,6 +147,7 @@
     left: 20px;
   } 
       
+  /* if you want the styling to apply to all of your buttons then you should apply it to button, or give all the buttons the same class */
  .Button-1, .Button-2, .Button-3, .Button-4, .Button-5 {
 
     margin: 0px;
@@ -169,3 +172,6 @@
 }
 
 }
+
+/* there seems to be a lot of manual positioning using the left,right,top,bottom properties, it would be better to use flexbox or grid on your outer elements
+to determine the positions of the children, manually positioning each element will be very inflexible and not responsive to devices - https://flexbox.malven.co/ */
